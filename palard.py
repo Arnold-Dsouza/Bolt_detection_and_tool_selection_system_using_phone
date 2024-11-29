@@ -35,7 +35,7 @@ while True:
         aruco_perimeter = cv2.arcLength(corners[0], True)
 
         # Pixel to cm ratio
-        pixel_cm_ratio = aruco_perimeter / 8.4
+        pixel_cm_ratio = aruco_perimeter / 20
 
         print(pixel_cm_ratio)
         contours = detector.detect_objects(img)
